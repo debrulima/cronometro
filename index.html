@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-image: url("images/bg.jpg");
+        background-size: cover;
+    }
+
+    .max-width {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10%;
+        background-color: #fff;
+        box-shadow: 0 0 5px #000;
+        text-align: center;
+    }
+
+    h1{
+        font-family: 'Gulzar', serif;
+        margin-top: 20px;
+    }
+
+    button{
+        padding: 10px;
+        border: none;
+        font-family: 'Segoe UI';
+        font-size: 1.1rem;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    button:hover{
+        background-color: #e2e2e2;
+    }
+
+    .bg-light{
+        background-color: #D3D3D3;
+    }
+
+    .bg-grey{
+        background-color: #a9a9a9;
+    }        
+    
+    .bg-dark{
+        background-color: #808080;
+    }
+</style>
+<body>
+
+    <div class="max-width">
+        <button onclick="start();" class="bg-light">Iniciar</button>
+        <button onclick="pause();" class="bg-grey">Pausar</button>
+        <button onclick="stop();" class="bg-dark">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+<script src="cron.js"></script>
+</body>
+</html>
